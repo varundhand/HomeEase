@@ -1,0 +1,49 @@
+# Ignore Python cache and compiled files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment directories
+venv/
+env/
+household_services_env/
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore build output
+dist/
+build/
+
+# Ignore temporary files and logs
+*.log
+*.tmp
+
+# Ignore .vscode settings and extensions
+.vscode/
+
+# Ignore package lock files
+package-lock.json
+yarn.lock
+
+# Ignore binary files
+*.bin
+
+# Ignore compiled Python files
+*.py[cod]
+*.so
+
+# Ignore specific config files (if applicable)
+config.py
+.env
+*.cfg
+
+# Ignore IntelliJ IDEA project files
+.idea/
+
+# Ignore Docker related files (if applicable)
+docker-compose.override.yml
+
+# Ignore any additional directories/files you don't want to track
+# Feel free to add more patterns based on what you see in the Git tab
+
+.DS_Store
