@@ -1,0 +1,68 @@
+/* Global Styles */
+html body {
+  font-family: 'Roboto', sans-serif;
+  /* Ensure the background spans the entire viewport */
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Add your background styling */
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 120px 24px 160px 24px;
+  pointer-events: none;
+  /* background-color: red;  */
+}
+
+.main:before {
+  background: radial-gradient(circle, rgba(173, 216, 230, 0.1) 0%, rgba(173, 216, 230, 0.05) 100%) !important;
+  position: absolute;
+  content: "";
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.main:after {
+  content: "";
+  background-image: url("../assets/grid.svg") !important; /* Adjusted path */
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.4;
+  filter: invert(1);
+}
+
+/* Radial gradient with pupils blueish shades */
+.gradient {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+    at 27% 37%, #92cac9 0px, transparent 0%
+  ),
+  radial-gradient(at 97% 21%, #8e6be8 0px, transparent 50%),
+  radial-gradient(at 52% 99%, #8e6be8 0px, transparent 50%),
+  radial-gradient(at 10% 29%, #8e6be8 0px, transparent 50%),
+  radial-gradient(at 97% 96%, #8e6be8 0px, transparent 50%),
+  radial-gradient(at 33% 50%, #8e6be8 0px, transparent 50%),
+  radial-gradient(at 79% 53%, #8e6be8 0px, transparent 50%);
+  filter: blur(100px) saturate(150%);
+  top: 80px;
+  opacity: 0.15;
+}
+
+/* To ensure the radial gradient is visible */
+body {
+  position: relative;
+  overflow: hidden;
+}
